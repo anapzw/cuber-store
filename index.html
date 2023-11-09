@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./assets/cube.ico">
+    <title>Cuber Store</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="./assets/logo-cuber-store.png" alt="Logo" width="137px">
+        <input type="text" placeholder="Digite o que você procura">
+        <div id="atendimento">
+            <img src="./assets/icon-central.png" alt="Ícone de mensagem" width="35px" height="35px">
+            <p>Central de <strong>Atendimento</strong></p>
+            <img src="./assets/expand-arrow.png" alt="" width="13px">
+        </div>
+        <div id="perfil">
+            <img src="./assets/icon-perfil.png" alt="Ícone de perfil" width="25px">
+            <p>Bem vindo(a) <strong>Entrar</strong> ou <strong>Cadastrar</strong></p>
+            <img src="./assets/expand-arrow.png" alt="" width="13px">
+        </div>
+        <div id="carrinho">
+            <a href=""><img src="./assets/icon-carrinho.png" alt="Ícone de carrinho de compras" width="32px"></a>
+            <div id="quantidade-itens-carrinho"><p>0</p></div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#"></a>Todos</li>
+            <li><a href="#"></a>Lançamentos</li>
+            <li><a href="#"></a>Cubos Tradicionais</li>
+            <li><a href="#"></a>Cubos Personalizados</li>
+            <li><a href="#"></a>Puzzles</li>
+            <li><a href="#"></a>Kits</li>
+            <li><a href="#"></a>Acessórios</li>
+        </ul>
+    </nav>
+    
+    <!-- <section id="cards-section">
+        <div class="card-1">
+            <p>Cubos Tradicionais</p>
+            <span></span>
+        </div>
+        <div class="card-2">
+            <p>Cubos Personalizados</p>
+            <span></span>
+        </div>
+        <div class="card-3">
+            <p>Outros Puzzles</p>
+            <span></span>
+        </div>
+    </section> -->
+    <main>
+        <ul class="listagem-produtos">
+            <li class="card-produto">
+                <img src="./assets/cubo-magico-3x3x3-moyu-meilong-color.png" alt="" class="img-produto">
+                <span></span>
+                <p>Cubo Mágico 3x3x3 Moyu Meilong Color</p>
+                <div class="div-preco">
+                    <p class="preco">R$ 49,90</p>
+                    <button onclick="addToCart('Cubo Mágico 3x3 Moyu Meilong Color', 49.90)" class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            <li class="card-produto">
+                <img src="./assets/cubo-magico-3x3x3-block-cube.png" alt="" class="img-produto">
+                <span></span>
+                <p>Cubo Mágico 3x3x3 Block Cube</p>
+                <div class="div-preco">
+                    <p class="preco">R$ 69,90</p>
+                    <button onclick="addToCart('Cubo Mágico 3x3x3 Block Cube', 69.90)" class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            <li class="card-produto">
+                <img src="./assets/mirror-blocks-3x3x3-qiyu-azul.png" alt="" class="img-produto">
+                <span></span>
+                <p>Mirror Blocks 3x3x3 QIYU Azul</p>
+                <div class="div-preco">
+                    <p class="preco">R$ 59,90</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            <li class="card-produto">
+                <img src="./assets/megaminx-3x3x3-qiyu-qiheng-color.png" alt="" class="img-produto">
+                <span></span>
+                <p>Megaminx 3x3x3 QIYU Qiheng Color</p>
+                <div class="div-preco">
+                    <p class="preco">R$ 59,90</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            <li class="card-produto">
+                <img src="./assets/cubo-magico-4x4x4-moyu-meilong-color.png" alt="" class="img-produto">
+                <span></span>
+                <p>Cubo Mágico 4x4x4 Moyu Meilong Color</p>
+                <div class="div-preco">
+                    <p class="preco">R$ 289,90</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            <li class="card-produto">
+                <img src="./assets/skewb-gan-magnetico.png" alt="" class="img-produto">
+                <span></span>
+                <p>Skewb GAN Magnético</p>
+                <div class="div-preco">
+                    <p class="preco">R$ 289,90</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            <li class="card-produto">
+                <img src="./assets/cubo-magico-1x1x1.png" alt="" class="img-produto">
+                <span></span>
+                <p>Cubo Mágico 1x1x1</p>
+                <div class="div-preco">
+                    <p class="preco">R$ 399,90</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            <li class="card-produto">
+                <img src="./assets/cubo-magico-cubercraft.png" alt="" class="img-produto">
+                <span></span>
+                <p>Cubo Mágico Cubercraft</p>
+                <div class="div-preco">
+                    <p class="preco">R$ 69,90</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+            <li class="card-produto">
+                <img src="./assets/porta-lapis-cubo-magico.png" alt="" class="img-produto">
+                <span></span>
+                <p>Porta-lápis Cubo Mágico</p>
+                <div class="div-preco">
+                    <p class="preco">R$ 54,90</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </li>
+        </ul>
+        <button class="btn-mais-produtos">Mais produtos</button>
+    </main>
+    <section id="section-newsletter">
+        <h3 id="newsletter">Newsletter</h3>
+        <h2 id="newsletter-titulo">Receba todas as promoções</h2>
+        <p id="newsletter-p">Quer receber ofertas exclusivas? Cadastre-se agora e ganhe um cupom de desconto</p>
+        <input type="text" placeholder="Digite seu e-mail" id="input-newsletter">
+    </section>
+    <footer>
+        <ul class="lista-footer">
+            <li class="titulo-footer">Institucional</li>
+            <li>Sobre a Cuber Store</li>
+            <li>Como comprar</li>
+            <li>Dicas para iniciante no Cubo Mágico</li>
+            <li>Sistema de pontos</li>
+            <li>Termos e Condições</li>
+            <li>Mais informações</li>
+        </ul>
+        <ul class="lista-footer">
+            <li class="titulo-footer">Suporte</li>
+            <li>Podemos ajudar?</li>
+            <li>Atendimento ao Cliente</li>
+            <li>Dúvidas Frequentes</li>
+            <li>Troca e Devolução</li>
+            <li>Contato</li>
+        </ul>
+        <ul class="lista-footer">
+            <li class="titulo-footer">Formas de pagamento</li>
+            <li><img src="./assets/formas de pagamento.png" alt="Formas de pagamento" width="200px"></li>
+        </ul>
+        <div class="lista-redes-sociais">
+            <p class="titulo-footer">Redes Sociais</p>
+            <div id="redes-sociais">
+                <a href="#"><img src="./assets/logo-instagram.png" alt="Logo Instagram" width="30px"></a>
+                <a href="#"><img src="./assets/logo-whatsapp.png" alt="Logo WhatsApp" width="30px"></a>
+                <a href="#"><img src="./assets/logo-x.png" alt="Logo X" width="30px"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
